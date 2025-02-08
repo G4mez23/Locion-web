@@ -32,11 +32,28 @@
             font-size: 18px;
             border-radius: 5px;
             margin-top: 20px;
+            cursor: pointer;
         }
         .buy-button:hover {
             background-color: darkred;
         }
+        .features {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        #phone-message {
+            display: none;
+            font-size: 20px;
+            color: yellow;
+            margin-top: 20px;
+        }
     </style>
+    <script>
+        function showPhoneNumber() {
+            document.getElementById('phone-message').style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -44,12 +61,13 @@
         <img class="product-image" src="5.png" alt="Loción Edición Especial">
         <p>Una fragancia premium con un diseño inspirado en la fuerza y el estilo de los superhéroes.</p>
         <h2>Características</h2>
-        <ul>
-            <li>Aroma intenso y duradero</li>
-            <li>Diseño exclusivo en rojo y negro</li>
-            <li>Edición limitada</li>
-        </ul>
-        <a href="#" class="buy-button">Comprar Ahora</a>
+        <div class="features">
+            <p>Aroma intenso y duradero</p>
+            <p>Diseño exclusivo en rojo y negro</p>
+            <p>Edición limitada</p>
+        </div>
+        <button class="buy-button" onclick="showPhoneNumber()">Comprar Ahora</button>
+        <p id="phone-message">Llámanos al: 502 3272 3708</p>
     </div>
 </body>
 </html>
