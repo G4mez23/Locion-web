@@ -73,18 +73,10 @@
             background-color: rgba(255, 0, 0, 0.2);
             border-radius: 10px;
         }
-        #phone-message {
-            display: none;
-            font-size: 22px;
-            color: #ffcc00;
-            margin-top: 20px;
-            font-weight: bold;
-            text-shadow: 0px 0px 5px red;
-        }
     </style>
     <script>
-        function showPhoneNumber() {
-            document.getElementById('phone-message').style.display = 'block';
+        function redirectToWhatsApp() {
+            window.location.href = "https://wa.me/50232723708?text=¡Quiero%20comprar%20la%20Loción%20Exclusiva!";
         }
     </script>
 </head>
@@ -99,8 +91,7 @@
             <p>Diseño exclusivo en rojo y negro</p>
             <p>Edición limitada</p>
         </div>
-        <button class="buy-button" onclick="showPhoneNumber()">Comprar Ahora</button>
-        <p id="phone-message">Llámanos al: 502 3272 3708</p>
+        <button class="buy-button" onclick="redirectToWhatsApp()">Comprar Ahora</button>
     </div>
 </body>
 </html>
